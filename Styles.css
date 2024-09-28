@@ -1,0 +1,186 @@
+:root{
+    --white:hsl(0, 0%, 100%);
+    --text:#5f5f5f;
+    --blue:hsl(219, 92%, 85%);
+    --green:hsl(156,36%,37%);
+}
+*{
+    scroll-behavior: smooth;
+    margin:0;
+    font-family:Helvetica;
+    padding:0;
+}
+.header-img{
+    width: 60px;
+    object-fit:contain;
+    
+}
+#nav-bar{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    position:fixed;
+    top:0;
+    justify-content:space-around;
+    background-color:var(--white);
+    align-items:center;
+    padding:10px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+}
+.nav-links a{
+    text-decoration:none;
+    color:var(--text);
+    padding:0 10px;
+}
+.logo-container{
+    display:flex;
+    align-items:center;
+}
+.the-product{
+    margin-left:10px;
+    font-size:25px;
+    font-weight:550;
+    font-family:, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background:var(--blue);
+}
+#email-section{
+     margin-top:100px;
+     text-align:center;
+}
+
+h2{
+    margin-bottom:20px
+}
+input{
+    padding:8px;
+    border-radius:5px;
+    border:1px solid var(--green);
+}
+#submit{
+    background: var(--green);
+    color:white;
+    cursor:pointer;
+}
+.icon{
+    color:var(--green);
+    margin-right:30px;    
+}
+section{
+    margin:40px 30px;
+    text-align:center;
+}
+.features{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:20px;
+}
+#features{
+    text-align:left;
+    margin:auto;
+    max-width:800px;
+}
+#video{
+    width:100%;
+}
+
+.product-img{
+    width:100%;
+    height:500px;
+    margin:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border:1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+}
+.product1{
+    background-image: url(https://ae-pic-a1.aliexpress-media.com/kf/S630d048a4cf843d8a0bacf9eeebd590fw.jpg_640x640.jpg_.webp);
+    
+}
+.product2{
+    background-image:url(https://ae-pic-a1.aliexpress-media.com/kf/S429edfdd9f3c4690845c605f58aab3f1d/Tranquil-Scenery-Phone-Case-For-Samsung-Galaxy-S24-S23-S22-S21-S20-Ultra-Plus-FE-S10.jpg_.webp);
+}
+.product3{
+    background-image:url(https://ae-pic-a1.aliexpress-media.com/kf/S98f3ae2a122b4ab79975d3c8e90c4458N/Blackened-Clown-Phone-Case-For-Samsung-Galaxy-S24-S23-S22-S21-S20-S10-S10E-S9-Ultra.jpg_.webp);
+}
+.card{
+    background-color: var(--white);
+    margin-bottom:10px;
+    margin:auto;
+    border-radius: 10px;
+    width:90%;
+}
+.inner-card{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding:10px;
+}
+.content{
+    font-family: 'Arial Narrow Bold', sans-serif;
+    margin-bottom:10px;
+    color:var(--text);
+}
+.flex{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+.main-price{
+    margin-right:20px;
+    font-size:30px;
+    font-family:Arial, sans-serif;
+    font-weight:600px;
+    color:var(--green);
+
+}
+.old-price{
+    text-decoration: line-through;
+    color:var(--text);
+    font-size:20px;
+}
+.add{
+    width:100%;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--green);
+    color:var(--white);
+    padding:10px;
+    cursor:pointer;
+    font-family: Arial, sans-serif;
+    margin-bottom:10px;
+    font-weight:700px;
+}
+@media only screen and (min-width: 600px) {
+    #nav-bar {
+    flex-direction: row;
+    }
+    }
+@media only screen and (450px < width < 600px) {
+    .card {
+    font-size: 0.85rem;
+        }
+    .product-img {
+    height: 400px;
+        }
+    }
+    @media only screen and (450px <= width) {
+    .card{
+    display: flex;
+    max-width: 525px;
+    }
+    .inner-card {
+    width: 300px;
+    padding: 20px;
+    }
+    .product-img {
+    width: 400px;
+    border-radius: 10px 0 0 10px;
+    }
+    }
