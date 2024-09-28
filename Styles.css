@@ -27,11 +27,11 @@
     padding:10px;
 }
 
-.nav-links{
+.nav-link{
     display:flex;
     list-style:none;
 }
-.nav-links a{
+.nav-link a{
     text-decoration:none;
     color:var(--text);
     padding:0 10px;
